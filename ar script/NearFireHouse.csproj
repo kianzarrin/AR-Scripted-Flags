@@ -22,6 +22,7 @@
     </Reference>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <Compile Remove="3Tracks.cs" />
     <Compile Remove="TailNoLHT.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -40,7 +41,7 @@
       <ZipFile>$(ProjectDir)/bin/$(ZipFileName)</ZipFile>
     </PropertyGroup>
     <ItemGroup>
-      <AuxilaryFiles Include="$(ProjectDir)*.cs" />
+      <AuxilaryFiles Include="$(ProjectDir)$(ProjectName).cs" />
       <OldZipFiles Include="$(ProjectDir)/bin/*.zip" />
     </ItemGroup>
     <RemoveDir Directories="$(DeployDir)" />
