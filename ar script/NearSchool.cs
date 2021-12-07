@@ -34,10 +34,11 @@ namespace Coreybpa {
         }
 
         public override bool Condition() {
+            const float distance = 64;
             foreach (ushort buildingId in ScanBuildingsInArea()) {
                 ref var building = ref buildingId.ToBuilding();
                 var v = building.m_position - NodeID.ToNode().m_position;
-                if(v.magnitude < 64 && building.Info.m_buildingAI is SchoolAI) {
+                if(v.sqrMagnitude < distance * distance && building.Info.m_buildingAI is SchoolAI) {
                     return true;
                 }
             }
