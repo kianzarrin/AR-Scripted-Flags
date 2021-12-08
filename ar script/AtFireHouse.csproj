@@ -23,6 +23,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <Compile Remove="3Tracks.cs" />
+    <Compile Remove="NearSchool.cs" />
     <Compile Remove="TailNoLHT.cs" />
   </ItemGroup>
   <ItemGroup>
