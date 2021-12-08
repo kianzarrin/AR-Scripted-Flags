@@ -1,5 +1,5 @@
 ﻿using AdaptiveRoads.Manager;
-namespace Coreybpa {
+namespace Kian {
     using AdaptiveRoads.CustomScript;
     using System.Linq;
     using static NetLaneExt.Flags;
@@ -17,6 +17,9 @@ namespace Coreybpa {
     using System;
 
     public class TestUturn : PredicateBase {
-        public override bool Condition() => SegmentEnd.Has(Uturn);
+        public override bool Condition() {
+            Console.WriteLine("Condition called for " + this );
+            return SegmentEnd.Has(Uturn);
+        }
     }
 }
