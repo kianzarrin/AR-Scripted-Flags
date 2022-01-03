@@ -10,7 +10,7 @@ namespace Hockenheim {
     using static NetNode.Flags;
     using System;
 
-    public class Custom0L1 : PredicateBase {
-        public override bool Condition() => Lanes(1).Has(NetLaneExt.Flags.Custom0);
+    public class Custom2L0 : PredicateBase {
+        public override bool Condition() => Lanes(0).Has(NetLaneExt.Flags.Custom2);
     }
 }

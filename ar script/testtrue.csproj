@@ -1,5 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
+    <AssemblyVersion>1.0.0.*</AssemblyVersion>
+    <Deterministic>false</Deterministic>
     <TargetFramework>net35</TargetFramework>
   </PropertyGroup>
   <PropertyGroup>
@@ -24,9 +26,9 @@
   <ItemGroup>
     <Compile Remove="3Tracks.cs" />
     <Compile Remove="AtFireHouse.cs" />
+    <Compile Remove="Custom2L0.cs" />
     <Compile Remove="NearSchool.cs" />
     <Compile Remove="TailNoLHT.cs" />
-    <Compile Remove="testtrue.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Assembly-CSharp" />
