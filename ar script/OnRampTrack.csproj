@@ -28,6 +28,7 @@
     <Compile Remove="AtFireHouse.cs" />
     <Compile Remove="NearSchool.cs" />
     <Compile Remove="TailNoLHT.cs" />
+    <Compile Remove="testtrue.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Assembly-CSharp" />
