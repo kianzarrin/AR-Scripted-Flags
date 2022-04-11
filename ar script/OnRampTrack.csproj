@@ -36,6 +36,8 @@
     <Reference Include="ICities" />
     <Reference Include="UnityEngine" />
     <Reference Include="AdaptiveRoads" />
+    <Reference Include="TMPE.API" />
+    <Reference Include="TrafficManager" />
   </ItemGroup>
   <Target Name="Deploy" AfterTargets="Build">
     <Message Importance="high" Text="Deploying ..." />
