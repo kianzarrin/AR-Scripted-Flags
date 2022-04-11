@@ -11,6 +11,8 @@ namespace Hock {
     using System;
 
     public class OnRampTrack : PredicateBase {
-        public override bool Condition() => true;
+        public override bool Condition() {
+            return true;
+        }
     }
 }
