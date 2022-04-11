@@ -27,6 +27,7 @@
     <Compile Remove="3Tracks.cs" />
     <Compile Remove="AtFireHouse.cs" />
     <Compile Remove="NearSchool.cs" />
+    <Compile Remove="OnRampTrack.cs" />
     <Compile Remove="TailNoLHT.cs" />
     <Compile Remove="testtrue.cs" />
   </ItemGroup>
