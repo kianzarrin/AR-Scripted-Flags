@@ -29,7 +29,6 @@
     <Compile Remove="NearSchool.cs" />
     <Compile Remove="OnRampTrack.cs" />
     <Compile Remove="TailNoLHT.cs" />
-    <Compile Remove="testtrue.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Assembly-CSharp" />
@@ -38,7 +37,6 @@
     <Reference Include="UnityEngine" />
     <Reference Include="AdaptiveRoads" />
     <Reference Include="TMPE.API" />
-    <Reference Include="TrafficManager" />
   </ItemGroup>
   <Target Name="Deploy" AfterTargets="Build">
     <Message Importance="high" Text="Deploying ..." />

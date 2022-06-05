@@ -1,5 +1,5 @@
 ﻿using AdaptiveRoads.Manager;
-namespace Kian3 {
+namespace Clus {
     using AdaptiveRoads.CustomScript;
     using static NetLaneExt.Flags;
     using static NetLane.Flags;
@@ -10,7 +10,9 @@ namespace Kian3 {
     using static NetNode.Flags;
     using System;
 
-    public class testtrue : PredicateBase {
-        public override bool Condition() => true;
+    public class CustomSegment01or32 : PredicateBase {
+        public override bool Condition() =>
+            (Segment.Has(NetSegmentExt.Flags.Custom0) & Segment.Has(NetSegmentExt.Flags.Custom0)) |
+            (Segment.Has(NetSegmentExt.Flags.Custom3) & Segment.Has(NetSegmentExt.Flags.Custom4));
     }
 }
