@@ -13,8 +13,13 @@ namespace Clus {
     using TrafficManager.API.Manager;
 
     public class CustomSegment01or45 : PredicateBase {
-        public override bool Condition() =>
-            (Segment.Has(NetSegmentExt.Flags.Custom0) && Segment.Has(NetSegmentExt.Flags.Custom0)) ||
-            (Segment.Has(NetSegmentExt.Flags.Custom4) && Segment.Has(NetSegmentExt.Flags.Custom5));
+        static IOptionsManager optMan => Implementations.ManagerFactory.OptionsManager;
+
+        static bool Option(string name) {
+            return optMan.TryGetOptionByName(name, out bool value) && value;
+        }
+        public override bool Condition() => Option("HighwayMergingRules") |
+            (Segment.Has(NetSegmentExt.Flags.Custom0) & Segment.Has(NetSegmentExt.Flags.Custom1)) |
+            (Segment.Has(NetSegmentExt.Flags.Custom4) & Segment.Has(NetSegmentExt.Flags.Custom5));
     }
 }
